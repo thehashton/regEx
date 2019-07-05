@@ -29,6 +29,8 @@ form input {
     padding: 10px;
     width: 100%;
     font-size: 22px;
+    border: 1px solid grey;
+    border-radius: 5px;
 }
 
 form button {
@@ -58,4 +60,28 @@ form label {
 form p {
     color: grey;
     font-size: 14px;
+}
+
+ /* validation styles */
+ input.valid {
+     border: 3px solid rgb(54, 179, 54);
+ }
+
+ input.invalid {
+    border: 3px solid rgb(202, 38, 38);
+}
+
+input + p {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: rgb(255, 0, 0);
+    opacity: 0;
+    height: 0;
+}
+
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
 }
