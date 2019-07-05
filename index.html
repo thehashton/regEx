@@ -11,12 +11,28 @@
 
 <body>
     <form action="form">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Enter a password">
-        <input type="password" placeholder="Enter your password again">
+        <label for="username">User Name</label>
+        <input name="username" type="text" placeholder="User Name"
+            title="Username must be alphanumeric and contain 5-12 characters">
+        <p>Username must be alphanumeric and contain 5-12 characters</p>
+
+        <label for="email">Email</label>
+        <input name="email" type="email" name="email" placeholder="Email address" <label
+            for="password1">Telephone</label>
+        <p>Email must be a valid address, e.g. harry@barry.com</p>
+
+        <label for="telephone">Telephone</label>
+        <input name="telephone" type="tel" name="tel" placeholder="Telephone">
+        <p>Telephone must be a valid UK telephone number (11 digits)</p>
+
+        <label for="password">Password</label>
+        <input name="password" type="password" placeholder="Enter a password" title="Six or more characters">
+        <p>Password must be alphanumeric (@,_and - are also allowed) and be 8-20 characters</p>
+
         <button>Login</button>
     </form>
+
+    <script src="regEx.js"></script>
 </body>
 
 </html>
